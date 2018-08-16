@@ -3,8 +3,9 @@ var flaggedVideos = new Set();
 function killVideo(video) {
 	video.innerHTML = '';
 
+    video.pause();
 	if(video.hasAttribute("src")) {
-		video.removeAttribute("src");
+		video.setAttribute("src", "");
 		video.load();
 	}
 }
@@ -17,8 +18,10 @@ function nomovdo(element) {
 
 		killVideo(video);
 
-		video.addEventListener("loadstart", function() {
-			killVideo(video);
+		['play', 'playing', 'loadstart'].forEach(function(event) {
+			video.addEventListener(event, function(e) {
+				killVideo(video);
+			});
 		});
 	});
 }
