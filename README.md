@@ -1,10 +1,18 @@
-# nomovdo - A working video blocking extension for Chrome
+# nomovdo+ - A working video blocking extension for Chrome
 
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 
-[Download](https://chrome.google.com/webstore/detail/nomovdo/liceejagengiobjejmofgipjdmcojlli)
+[Download](https://chrome.google.com/webstore/detail/nomovdo%2B-video-blocker/iphdnlmkhpokogoiilglemoglfoocagf)
 
-nomovdo is an extension for blocking videos on websites.
+nomovdo+ is an extension for blocking videos on websites.
+
+Note: this is a modified version of [this extension](https://github.com/bullno1/nomovdo) but
+handles more cases. I'm happy to give this up if the original author want's to take the
+changes but basically the original is not blocking videos on lots of places so I started
+hacking to make try to make it work in more cases.
+
+# original readme
+
 It was created because I could not find anything that works consistently on all websites.
 
 ## Features
